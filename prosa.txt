@@ -1,0 +1,14 @@
+El objeto tienda tiene como atributo una lista de ventas, que son con las que luego podra averiguar la ganancia de cierta fecha
+en especifico.
+
+Pense en modelar como un objeto a cada tipo de prenda, pero al leer bien comprendi que no hay una diferencia
+de requerimientos entre estas, mas que su nombre,por lo que elegi dejar al objeto prenda solamente.
+
+Luego al plantear el estado de las prendas, pense en hacerlas con herencia, o que sean un atributo en si,
+pero me decidi por hacerlas con herencia, porque me facilitara las cosas, aunque esto hara que las prendas
+no puedan cambiar de estado, pero en la informacion que tenemos no nos indica, que esto pueda ocurrir,
+si fuese asi deberiamos plantearlo de manera tal que el estado sea un atributo.
+
+Pensando en el tipo de pago, se me ocurrio plantearlo como un atributo, o plantearlos directamente en un
+metodo de la venta,pero senti que seria muy engorrioso a la hora de codearlo, por lo que me decante por
+pensarla como atributo

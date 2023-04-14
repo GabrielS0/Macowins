@@ -1,0 +1,35 @@
+ 
+#Tienda()>>Ganancias(fecha) {
+    return sum.map.filter(Lista_venta,fecha);
+}
+#Venta()>>ValorTotalVenta(){
+    return TipoDePago.Recargo(ValorTotalDeVentaSinRecargo)+
+    ValorTotalDeVentaSinRecargo
+}
+>>ValorTotalDeVentaSinRecargo{
+    return Prenda.CalculoDePrecioDeVenta()*Cantidad
+}
+#Efectivo()>>Recargo(Valor){
+    return 0
+}
+
+#Tarjeta()>>Recargo(Valor){
+    return MontoFijo*Cuotas+0.01*Valor
+}
+
+#Prenda()>>CalculoDePrecioDeVenta{
+    ...
+}
+
+Heredan de prenda
+Nuevo()>>CalculoDePrecioDeVenta{
+    return this.precio;
+}
+
+Promocion()>>CalculoDePrecioDeVenta{
+    return this.precio-ValorPromo;
+}
+
+Promocion()>>CalculoDePrecioDeVenta{
+    return this.precio/2;
+}
